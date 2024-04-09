@@ -1,0 +1,13 @@
+descripiton: Example app for the register-github-app-cli CLI
+
+# Our homepage
+url: https://github.com/gr2m/register-github-app-cli
+
+# The list of events the the GitHub App subscribes to.
+default_events:
+  - issues
+
+# The set of permissions needed by the GitHub App.
+default_permissions:
+  # https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-issues
+  issues: write

@@ -1,0 +1,38 @@
+{
+  "name": "register-github-app-cli",
+  "version": "0.0.0-development",
+  "type": "module",
+  "description": "CLI to register a GitHub App using the manifest flow",
+  "repository": "github:gr2m/register-github-app-cli",
+  "keywords": [
+    "github-app",
+    "cli"
+  ],
+  "bin": "./register-github-app-cli.js",
+  "author": "Gregor Martynus (https://github.com/gr2m)",
+  "license": "ISC",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "meow": "^13.2.0",
+    "open": "^10.1.0",
+    "register-github-app": "^2.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  },
+  "scripts": {
+    "lint": "prettier --check \"*.{js,json,ts,md}\" \".github/**/*.yml\"",
+    "lint:fix": "prettier --write \"*.{js,json,ts,md}\" \".github/**/*.yml\""
+  },
+  "release": {
+    "branches": [
+      "+([0-9]).x",
+      "main",
+      "next",
+      {
+        "name": "beta",
+        "prerelease": true
+      }
+    ]
+  }
+}

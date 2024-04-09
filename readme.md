@@ -1,5 +1,3 @@
-# 🚧 WORK IN PROGRESS - See [#1](https://github.com/gr2m/register-github-app-cli/pull/1)
-
 # `register-github-app-cli`
 
 > CLI to register a GitHub App using the manifest flow
